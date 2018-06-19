@@ -1,13 +1,48 @@
+/**** universal style **/
+
 *{
   box-sizing: border-box;
 }
 
-#vidwrapper, #videotext {
-  max-width:100%;
+html {
+  width:100%;
   height:100%;
-  background-color:green;
 }
 
-#videotext{
-  background-color:red;
+#videofeatures {
+  max-width:100%;
+  padding-top:10px;
+
+
+}
+/**styling text***/
+.text{
+  font-style: italic;
+  font-weight:200;
+  font-family: 'Roboto', sans-serif;
+  cursor:alias;
+  letter-spacing: 2px;
+}
+
+/***body styling ***/
+body{
+  margin:0 auto;
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+
+/***responsive layout***/
+/***i texted on chrome,safary and firefox***/
+@media (min-width:769px){
+  #videofeatures{
+    margin:0 auto;
+    padding-left:30px;
+    padding-right:30px;
+  }
+  body{
+    background-color: orange;
+    text-align:center;
+
+  }
 }
